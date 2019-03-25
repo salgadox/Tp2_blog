@@ -11,6 +11,16 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
+
+
+
+/*Excercice 2.1 */
+Route::get('/', 'HomeController@index');
+Route::get('/contact', 'HomeController@contact');
+Route::get('/articles', 'HomeController@articles');
+//Route::resource('projects', 'ProjectsController');
+
+

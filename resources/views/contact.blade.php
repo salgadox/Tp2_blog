@@ -1,8 +1,8 @@
 @extends('layouts.main')
-@section('title')
+@section('title','contact')
 
 @section('content')
-    @section('subtitle','Welcome')
+    @section('subtitle','Contact us')
     @section('subheader','blog')
 
 @endsection
