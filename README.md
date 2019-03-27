@@ -91,5 +91,9 @@ php artisan make:model Contact`
 
 *DEBUGED Change post table to posts table and contact table to contacts. now I can acces the data base.*
 
+*Seeded posts and users, as well as shows the all the post title in the main page.*
+
+
+
 
 
