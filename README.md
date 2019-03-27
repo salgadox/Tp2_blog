@@ -93,7 +93,8 @@ php artisan make:model Contact`
 
 *Seeded posts and users, as well as shows the all the post title in the main page.*
 
+*TODO EXO 4. show only the 3 lastest posts*
 
-
+*TODO EXO 5. afficher l'author*
 
 

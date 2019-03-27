@@ -22,4 +22,12 @@ class HomeController extends Controller
     public function contact(){
     	return view('contact');
     }
+
+    public function show($post_name){
+        $post = Post::where('post_name', $post_name)->first(); //get first post with post_name == $post_name
+        //dd('Hello');
+        return view('show', array('post'=>$post));
+    }
 }
+
+

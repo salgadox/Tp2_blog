@@ -21,6 +21,8 @@
 Route::get('/', 'HomeController@index');
 Route::get('/contact', 'HomeController@contact');
 Route::get('/articles', 'HomeController@articles');
+Route::get('/articles/{post_name}', 'HomeController@show');
+
 //Route::resource('projects', 'ProjectsController');
 
 
