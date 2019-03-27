@@ -26,6 +26,12 @@
 *to upload to github first create repository and then:*
 `git remote add origin https://github.com/salgadox/Tp2_blog.git`
 
+*force it*
+`git push -f`
+
+*to uploade normally :*
+`git push`
+
 *1.1. first route already made with function "@index",*
 
 
@@ -74,6 +80,16 @@ Copy this text inside the run function it and decomment line 14 from /database/s
 To see all the changes in the db file : 
 `php artisan migrate:fresh --seed`
 *
+
+*Eloquent
+made Post & Contact models*
+`php artisan make:model Post
+php artisan make:model Contact`
+*We have to create a model for each table that he does*
+
+*Complete tables (post and contact)*
+
+*DEBUGED Change post table to posts table and contact table to contacts. now I can acces the data base.*
 
 
 
