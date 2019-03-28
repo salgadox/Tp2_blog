@@ -13,21 +13,7 @@ class HomeController extends Controller
 
     	return view('welcome', array('posts'=>$posts));
     }
-
-    public function articles()
-    {
-    	return view('articles');
-    }
-
-    public function contact(){
-    	return view('contact');
-    }
-
-    public function show($post_name){
-        $post = Post::where('post_name', $post_name)->first(); //get first post with post_name == $post_name
-        //dd('Hello');
-        return view('show', array('post'=>$post));
-    }
+    
 }
 
 

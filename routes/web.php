@@ -19,9 +19,12 @@
 
 /*Excercice 2.1 */
 Route::get('/', 'HomeController@index');
-Route::get('/contact', 'HomeController@contact');
-Route::get('/articles', 'HomeController@articles');
-Route::get('/articles/{post_name}', 'HomeController@show');
+
+Route::get('/contact', 'ContactController@create');
+Route::post('/contact', 'ContactController@store');
+
+Route::get('/articles', 'PostController@index');
+Route::get('/articles/{post_name}', 'PostController@show');
 
 //Route::resource('projects', 'ProjectsController');
 
