@@ -19,12 +19,15 @@
 
 /*Excercice 2.1 */
 Route::get('/', 'HomeController@index');
-
+Route::get('/confirm', 'contactController@index');
 Route::get('/contact', 'ContactController@create');
 Route::post('/contact', 'ContactController@store');
 
 Route::get('/articles', 'PostController@index');
-Route::get('/articles/{post_name}', 'PostController@show');
+Route::get('/articles/{post_name}', 'PostController@show')->name('showArticle');
+
+Route::post('/articles/{post_name}/comment', 'CommentsController@store')->name('comment');
+
 
 //Route::resource('projects', 'ProjectsController');
 

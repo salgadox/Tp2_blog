@@ -26,6 +26,7 @@
                 <button type="submit" class="btn btn-secondary">Send !</button>
         </form>
 	</div>
+    <a href="/confirm"> Go to all the contact messages. </a>
 </div>
 
 @endsection

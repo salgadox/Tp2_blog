@@ -23,7 +23,9 @@ class CreatePostsTable extends Migration
             $table->string('post_name',200)->default('');
             $table->string('post_type',20)->default('article');
             $table->text('post_category')->nullable();
+            
             $table->foreign('post_author',20)->references('id')->on('users');
+            
             $table->timestamps();
         });
     }

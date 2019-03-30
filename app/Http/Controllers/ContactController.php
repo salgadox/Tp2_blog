@@ -7,7 +7,12 @@ use App\Http\Requests\ContactRequest;
 
 class ContactController extends Controller
 {
-    
+    public function index(){
+        $contacts = \App\Contact::all();
+
+        return view('confirm', ['contacts'=>$contacts]);
+    }
+
     public function create(){
     	return view('contact');
     }
@@ -20,6 +25,8 @@ class ContactController extends Controller
     	$contact->contact_message= $request->input('contact_message');
     	$contact->save();
 
-    	return view('confirm');
+        $contacts = \App\Contact::all();
+
+    	return view('confirm', ['contacts'=>$contacts]);
     }
 }

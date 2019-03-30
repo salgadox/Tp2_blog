@@ -16,4 +16,12 @@ class Post extends Model
        return $this->belongsTo('App\User','post_author');
    }
 
+   /**
+     * Get the comments for the blog post.
+     */
+    public function comments()
+    {
+        return $this->hasMany('App\Comment');
+    }
+
 }
