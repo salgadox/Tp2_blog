@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Post extends Model
 {
     protected $table = 'posts';
+    protected $fillable = ['post_title','post_content', 'post_author'];
 
      /**
     * Get the user that authored the post.

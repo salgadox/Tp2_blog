@@ -27,7 +27,8 @@ Route::get('/articles', 'PostController@index');
 Route::get('/articles/{post_name}', 'PostController@show')->name('showArticle');
 
 Route::post('/articles/{post_name}/comment', 'CommentsController@store')->name('comment');
-
+Route::get('/create', 'PostController@create');
+Route::post('/create', 'PostController@store')->name('createArticle');
 
 //Route::resource('projects', 'ProjectsController');
 

@@ -16,7 +16,7 @@ class CreatePostsTable extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedInteger('post_author');
-            $table->timestamp('post_date');
+            $table->timestamp('post_date')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->text('post_content');
             $table->text('post_title');
             $table->string('post_status',20)->default('publish');
