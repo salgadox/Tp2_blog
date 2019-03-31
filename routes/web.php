@@ -20,26 +20,30 @@
 /*Excercice 2.1 */
 Route::get('/', 'HomeController@index');
 
-Route::get('/confirm', 'contactController@index');
+Route::get('/confirm', 'contactController@index')->middleware('auth');
 
-Route::get('/contact', 'ContactController@create');
-Route::post('/contact', 'ContactController@store');
+Route::get('/contact', 'ContactController@create')->middleware('auth');
+Route::post('/contact', 'ContactController@store')->middleware('auth');
 
-Route::get('/articles', 'PostController@index');
-Route::get('/articles/{post_name}', 'PostController@show')->name('showArticle');
+Route::get('/articles', 'PostController@index')->middleware('auth');
+Route::get('/articles/{post_name}', 'PostController@show')->name('showArticle')->middleware('auth');
 
-Route::post('/articles/{post_name}/comment', 'CommentsController@store')->name('comment');
+Route::post('/articles/{post_name}/comment', 'CommentsController@store')->name('comment')->middleware('auth');
 
-Route::get('/create', 'PostController@create');
-Route::post('/create', 'PostController@store')->name('createArticle');
+Route::get('/create', 'PostController@create')->middleware('auth');
+Route::post('/create', 'PostController@store')->name('createArticle')->middleware('auth');
 
-Route::get('/articles/{post_name}/edit', 'PostController@edit');
-Route::patch('/articles/{post_name}', 'PostController@update')->name('editArticle');
+Route::get('/articles/{post_name}/edit', 'PostController@edit')->name('edit')->middleware('auth');
+Route::patch('/articles/{post_name}', 'PostController@update')->name('editArticle')->middleware('auth');
 
-Route::delete('/articles/{post_name}', 'PostController@destroy')->name('deleteArticle');
+Route::delete('/articles/{post_name}', 'PostController@destroy')->name('deleteArticle')->middleware('auth');
 
 
 
 //Route::resource('projects', 'ProjectsController');
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

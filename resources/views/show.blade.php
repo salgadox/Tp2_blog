@@ -51,7 +51,11 @@
         @endforeach
 
     </div> 
-
+<!-- AUN NO SIRVE 
+    <div>
+        <a href="'comment',['post_name'=> $post->post_name]">Edit or delete this article</a>
+    </div>
+-->
 
 </div>
 
