@@ -23,14 +23,37 @@ class PostController extends Controller
     {
         $attributes = request()->validate([
             'post_title' => ['required', 'min:3', 'max:255'],
+            'post_name' => ['required', 'min:3', 'max:255'],
             'post_content' => ['required', 'min:3'],
-            'post_author' =>['required']
+            'post_author' =>['required'],
+            'post_date' => ''
         ]);
 
     /*  Project::create(request(['title','description']));*/
 
         Post::create($attributes);
         return redirect('/articles');
+    }
+
+
+    public function edit($post_name)
+    { 
+        $post = Post::where('post_name', $post_name)->first();
+
+        return view('edit',array('post'=>$post));
+    }
+
+
+    public function update(Request $request, $post_name)
+    { 
+        $post = Post::where('post_name', $post_name)->first();
+       // $post->update(request(['post_title', 'post_name','post_content','post_author','post_date']));
+
+       $post->update($request->all());
+
+        return redirect('/articles');
+
+        //dd(request()->all());
     }
 
 
@@ -44,4 +67,14 @@ class PostController extends Controller
 
         return view('show', array('post'=>$post, 'author'=>$author, 'comments'=>$comments));
     }
+
+     public function destroy($post_name)
+    { 
+        $post = Post::where('post_name', $post_name)->first();
+
+        $post->delete();
+        return redirect('/articles');
+        
+    }
+
 }
