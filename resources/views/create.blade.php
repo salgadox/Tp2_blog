@@ -15,10 +15,10 @@
 		</div>
 
 		<div class="control">
-			<label class="label" for="post_author" >
-				Author id
+			<label class="label" for="post_name" >
+				post name
 			</label>
-			<input type="text" class="input {{ $errors->has('post_author')? 'is-danger' : '' }}" name="post_author" value="{{ old('post_author') }}"  >
+			<input type="text" class="input {{ $errors->has('post_name')? 'is-danger' : '' }}" name="post_name" value="{{ old('post_name') }}"  >
 		</div>
 		
 		<div class="field">

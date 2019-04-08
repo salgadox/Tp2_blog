@@ -15,7 +15,7 @@ class CreatePostsTable extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedInteger('post_author');
+            $table->unsignedInteger('post_author'); //post_author is used also to identify roles (post_author == 1 == admin; everything else is user) 
             $table->timestamp('post_date')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->text('post_content');
             $table->text('post_title');
@@ -24,7 +24,8 @@ class CreatePostsTable extends Migration
             $table->string('post_type',20)->default('article');
             $table->text('post_category')->nullable();
             
-            $table->foreign('post_author',20)->references('id')->on('users');
+            $table->foreign('post_author',20)->references('id')->on('users')->('casacade'); 
+            //if the post_author is deleted we are going to cascade back and delete everything else. 
             
             $table->timestamps();
         });

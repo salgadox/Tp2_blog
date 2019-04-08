@@ -19,7 +19,7 @@
                 <li><a href="/contact">Contact</a></li>
             </ul>
 
-            <ul class="navbar-nav ml-auto">
+            <ul class="top-bar-right">
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
