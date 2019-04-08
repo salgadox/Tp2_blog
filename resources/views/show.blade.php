@@ -51,6 +51,11 @@
         @endforeach
 
     </div> 
+
+
+    @can('update', $post)
+    <a href="/articles/{{ $post->post_name }}/edit">Update or delete this article</a>
+    @endcan
 <!-- AUN NO SIRVE 
     <div>
         <a href="'comment',['post_name'=> $post->post_name]">Edit or delete this article</a>
