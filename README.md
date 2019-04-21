@@ -55,12 +55,12 @@ If this is not the case you should installed it. you can follow this link that w
 -Create a tp2_BD.sqlite file `touch tp2_BD` 
 -Go to .env file and change the following : 
 ```
->DB_CONNECTION=**sqlite**
+>DB_CONNECTION=sqlite
 DB_HOST=127.0.0.1
->DB_PORT=**8001**
->DB_DATABASE=**/Users/xsal/code/Tp2_blog-cppy/tp2_BD.sqlite** _#this is my path, change it to your file path._ 
-> ~~ #DB_USERNAME=homestead ~~
-> ~~ #DB_PASSWORD=secret ~~
+>DB_PORT=8001
+>DB_DATABASE=/Users/xsal/code/Tp2_blog-cppy/tp2_BD.sqlite #this is my path, change it to your file path._ 
+> #DB_USERNAME=homestead 
+> #DB_PASSWORD=secret 
 ```
 -Do the migrations `php artisan migrate --seed`
 -And finally `php artisan serve`
@@ -73,13 +73,9 @@ To enter the blog you have to be authentificted.
 You can either create your own user going though the registration process or you can log in with this id users: 
 
 Mail | Password | Role |
---- | --- | --- | 
 Xim@xim.com| holahola | Administrator | 
---- | --- | 
 hongo.salado@gmail.com| holahola | user |
---- | --- | 
 brigite@vincent.com| holahola | user |
---- | --- | 
 Salgado@mail.com| holahola | user |
 
 ###About the roles
