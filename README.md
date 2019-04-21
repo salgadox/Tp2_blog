@@ -128,5 +128,7 @@ Feel free to explore this blog, to create now post, delete them, leave comments,
 ![AllTheContactMessages](readmeImages/AllTheContactMessages.png "All The Contact Messages page")
 ![PermisionWithAdmin](readmeImages/PermisionWithAdmin.png "PermisionWithAdmin page")
 ![NoPermissionUser](readmeImages/NoPermissionUser.png "NoPermissionUser page")
+![login](readmeImages/login.png "login page")
+![registrate](readmeImages/registrate.png "registrate page")
 
 
