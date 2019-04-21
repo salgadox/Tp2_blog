@@ -68,7 +68,7 @@ DB_HOST=127.0.0.1
 Once everything is functionning, you'll be able to see the blog in your localhost/Port.
 
 
-##Usage
+## Usage
 To enter the blog you have to be authentificted. 
 You can either create your own user going though the registration process or you can log in with this id users: 
 
@@ -78,7 +78,7 @@ hongo.salado@gmail.com| holahola | user |
 brigite@vincent.com| holahola | user |
 Salgado@mail.com| holahola | user |
 
-###About the roles
+### About the roles
 All users have a role. By default each user will have a 'user role'. 
 If you may want to change this role you should go to 
 Tp2_blog/app/Http/AuthServiceProvider.php 
