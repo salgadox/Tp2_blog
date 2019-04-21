@@ -1,8 +1,8 @@
 # "Projet de création d’une application web avec le framework PHP Laravel"
 >This project is presented as my "programmation web côté serveur" final projet. It is the result of one semestrer studing laravel and php. 
 
-![screenShot](readmeImages/articlePage1.png "Show article page")
-![screenShot](readmeImages/articlePage2.png "Show comments page")
+![ScreenShot](readmeImages/articlePage1.png "Show article page")
+![CommentPage](readmeImages/articlePage2.png "Show comments page")
 
 ## Table of Contents
 
@@ -14,9 +14,9 @@
 * [Usage](#usage)
     * [About the roles](#About-the-roles)
     * [Running the tests](#Running-the-tests)
-    * [ScreenShots](#ScreenShots)
 * [Author](#Author)
 * [Acknowledgements](#acknowledgements)
+* [ScreenShots](#ScreenShots)
 
 ## About the Project 
 This project contains : 
@@ -107,17 +107,6 @@ The administrator is the only person with sufficient power to delete or update a
 
 Feel free to explore this blog, to create now post, delete them, leave comments, send messages though the contact us page, update or delete the post... 
 
-###ScreenShots
-
-![WelcomePage](readmeImages/welcomePage.png "Welcome page")
-![ArticlePage](readmeImages/Articles.png "Articles page")
-![UpdateDeletePage](readmeImages/UpdateDeletePage.png "Update/Delete page")
-![ContactUsPage](readmeImages/contactUs.png "Contact Us page")
-![AllTheContactMessages](readmeImages/AllTheContactMessages.png "All The Contact Messages page")
-![AllTheContactMessages](readmeImages/AllTheContactMessages.png "All The Contact Messages page")
-![PermisionWithAdmin](readmeImages/PermisionWithAdmin.png "PermisionWithAdmin page")
-![NoPermissionUser](readmeImages/NoPermissionUser.png "NoPermissionUser page")
-
 
 
 ## Author
@@ -130,5 +119,16 @@ Feel free to explore this blog, to create now post, delete them, leave comments,
 * Laracast for the tutorials
 * Nice coffee lady that sold me coffe during all the working weekends. 
 
+
+##ScreenShots
+
+![WelcomePage](readmeImages/welcomePage.png "Welcome page")
+![ArticlePage](readmeImages/Articles.png "Articles page")
+![UpdateDeletePage](readmeImages/UpdateDeletePage.png "Update/Delete page")
+![ContactUsPage](readmeImages/contactUs.png "Contact Us page")
+![AllTheContactMessages](readmeImages/AllTheContactMessages.png "All The Contact Messages page")
+![AllTheContactMessages](readmeImages/AllTheContactMessages.png "All The Contact Messages page")
+![PermisionWithAdmin](readmeImages/PermisionWithAdmin.png "PermisionWithAdmin page")
+![NoPermissionUser](readmeImages/NoPermissionUser.png "NoPermissionUser page")
 
 
