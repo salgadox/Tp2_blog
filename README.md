@@ -3,8 +3,6 @@
 
 ![ScreenShot](readmeImages/articlePage1.png "Show article page")
 
-![CommentPage](readmeImages/articlePage2.png "Show comments page")
-
 ## Table of Contents
 
 * [About the Project](#about-the-project)
@@ -125,6 +123,8 @@ Feel free to explore this blog, to create now post, delete them, leave comments,
 
 ![WelcomePage](readmeImages/welcomePage.png "Welcome page")
 ![ArticlePage](readmeImages/Articles.png "Articles page")
+![ScreenShot](readmeImages/articlePage1.png "Show article page")
+![CommentPage](readmeImages/articlePage2.png "Show comments page")
 ![UpdateDeletePage](readmeImages/UpdateDeletePage.png "Update/Delete page")
 ![ContactUsPage](readmeImages/contactUs.png "Contact Us page")
 ![AllTheContactMessages](readmeImages/AllTheContactMessages.png "All The Contact Messages page")
