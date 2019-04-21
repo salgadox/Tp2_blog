@@ -117,18 +117,28 @@ Feel free to explore this blog, to create now post, delete them, leave comments,
 
 
 ## ScreenShots
-
-![WelcomePage](readmeImages/welcomePage.png "Welcome page")
-![ArticlePage](readmeImages/Articles.png "Articles page")
-![ScreenShot](readmeImages/articlePage1.png "Show article page")
-![CommentPage](readmeImages/articlesPage2.png "Show comments page")
-![UpdateDeletePage](readmeImages/UpdateDeletePage.png "Update/Delete page")
-![ContactUsPage](readmeImages/contactUs.png "Contact Us page")
-![AllTheContactMessages](readmeImages/AllTheContactMessages.png "All The Contact Messages page")
-![AllTheContactMessages](readmeImages/AllTheContactMessages.png "All The Contact Messages page")
-![PermisionWithAdmin](readmeImages/PermisionWithAdmin.png "PermisionWithAdmin page")
-![NoPermissionUser](readmeImages/NoPermissionUser.png "NoPermissionUser page")
+login page
 ![login](readmeImages/login.png "login page")
+registrate page
 ![registrate](readmeImages/registrate.png "registrate page")
+Welcome page
+![WelcomePage](readmeImages/welcomePage.png "Welcome page")
+Articles page
+![ArticlePage](readmeImages/Articles.png "Articles page")
+Article page
+![ScreenShot](readmeImages/articlePage1.png "Show article page")
+Comments page
+![CommentPage](readmeImages/articlesPage2.png "Show comments page")
+Update/Delete page
+![UpdateDeletePage](readmeImages/UpdateDeletePage.png "Update/Delete page")
+Contact Us page
+![ContactUsPage](readmeImages/contactUs.png "Contact Us page")
+All The Contact Messages page
+![AllTheContactMessages](readmeImages/AllTheContactMessages.png "All The Contact Messages page")
+PermisionWithAdmin page
+![PermisionWithAdmin](readmeImages/PermisionWithAdmin.png "PermisionWithAdmin page")
+NoPermissionUser page
+![NoPermissionUser](readmeImages/NoPermissionUser.png "NoPermissionUser page")
+
 
 
