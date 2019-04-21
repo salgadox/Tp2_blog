@@ -1,6 +1,8 @@
-# Project Title
->Short blurb about what your product does.
-One Paragraph of project description goes here
+# "Projet de création d’une application web avec le framework PHP Laravel"
+>This project is presented as my "programmation web côté serveur" final projet. It is the result of one semestrer studing laravel and php. 
+
+![screenShot](readmeImages/articlePage1.png "Show article page")
+![screenShot](readmeImages/articlePage2.png "Show comments page")
 
 ## Table of Contents
 
@@ -8,196 +10,125 @@ One Paragraph of project description goes here
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
+  * [Installing](#Installing)
 * [Usage](#usage)
-* [Contributing](#contributing)
-* [License](#license)
-* [Contact](#contact)
+    * [About the roles](#About-the-roles)
+    * [Running the tests](#Running-the-tests)
+    * [ScreenShots](#ScreenShots)
+* [Author](#Author)
 * [Acknowledgements](#acknowledgements)
+
+## About the Project 
+This project contains : 
+1. Functionnal and completed version of TP2
+2. All the project submitted in Github
+3. A nice README.md file 
+4. Functionnal commentaries system 
+5. CRUD 
+6. Identification and Authorisation 
+7. Two roles: User and Administrator 
+8. Media content.  
+
+### Built With
+* [Laravel](https://laravel.com/)  - The web framework used
+Laravel Installer 2.0.1 
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Verify your computer have Laravel 
+```
+laravel --version
+```
 
-```
-Give examples
-```
+If this is not the case you should installed it. you can follow this link that would help you do it : https://laracasts.com/series/laravel-from-scratch-2018/episodes/2 
+
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
+-Download Zip and unzipped it. 
+-Mv it to a repertory where you have laravel install. 
+-Install composer : `composer install`
+-Copy the .env.example file to a .en file `cp .env.example .env`
+-Generate Key : `php artisan key:generate`
+-Create a tp2_BD.sqlite file `touch tp2_BD` 
+-Go to .env file and change the following : 
 ```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
-
-
-![explica](imagen.png "name")
-
-*Create laravel project :* 
-`laravel new Tp2_blog`
-
-*Initialized git repository* 
-`git init` 
-
-*add every file to the repository* 
-`git add .` 
-
-*See what git's gonna do*
-`git status`
-
-*each commit is a point the history of the code repository.*
-`git commit -m 'initial commit'`
-
-*shows the history of the code repository* 
-`git log`
-
-*git commit --amend modify the latest commit*
-`git commit --amend`
-
-*git checkout copy commit hash to return to that point in code*
-`git checkout hash`
-
-*to upload to github first create repository and then:*
-`git remote add origin https://github.com/salgadox/Tp2_blog.git`
-
-*force it*
-`git push -f`
-
-*to uploade normally :*
-`git push`
-
-*1.1. first route already made with function "@index",*
-
-
-* 	2.1. create first layout (main.blade.php)
-	2.2. change content inside views: ex...* 
-	`@section('title', 'about us'), <title>@yield('title', 'Laravel')</title>`
-	2.3.Already have a menu:  Home / Articles / Contact (two new views: aticles.blade.php & contact-blade.php) with controlers in web
-	`Route::get('/contact', 'HomeController@contact');
-	Route::get('/articles', 'HomeController@articles');`*
-
-* 3 
-Create sqlite file: tp2_BD.sqlite (create new file named it and put the .sqlite at the end :)) 
-
-int the .env file
-DB_CONNECTION=sqlite
+>DB_CONNECTION=**sqlite**
 DB_HOST=127.0.0.1
-DB_PORT=8001
-DB_DATABASE=/Users/xsal/code/Tp2_blog/db.sqlite
-#DB_USERNAME=homestead
-#DB_PASSWORD=secret
+>DB_PORT=**8001**
+>DB_DATABASE=**/Users/xsal/code/Tp2_blog-cppy/tp2_BD.sqlite** _#this is my path, change it to your file path._ 
+> ~~ #DB_USERNAME=homestead ~~
+> ~~ #DB_PASSWORD=secret ~~
+```
+-Do the migrations `php artisan migrate --seed`
+-And finally `php artisan serve`
 
-DB_HOST 8001 is the one that I use in my laptop. You can change it if you use another. 
-DB_DATABASE= UserPATH to get to the sqlite file
+Once everything is functionning, you'll be able to see the blog in your localhost/Port.
 
-to migrate : 
-`php artisan migrate`
 
-then create two tables: "post" & "contact" 
-`php artisan make:migration create_contact_table --create=contact`
-`php artisan make:migration create_post_table --create=post`
+##Usage
+To enter the blog you have to be authentificted. 
+You can either create your own user going though the registration process or you can log in with this id users: 
 
-Create One seeder for test : 
-`php artisan make:seeder UsersTableSeeder`
+Mail | Password | Role |
+--- | --- | --- | 
+Xim@xim.com| holahola | Administrator | 
+--- | --- | 
+hongo.salado@gmail.com| holahola | user |
+--- | --- | 
+brigite@vincent.com| holahola | user |
+--- | --- | 
+Salgado@mail.com| holahola | user |
 
-Copy this text inside the run function it and decomment line 14 from /database/seeds/DatabaseSeeder.php/
-
-`public function run()
+###About the roles
+All users have a role. By default each user will have a 'user role'. 
+If you may want to change this role you should go to 
+Tp2_blog/app/Http/AuthServiceProvider.php 
+and change the administrator id to the id from the desired user.  
+ ```
+public function boot(Gate $gate)
     {
-          DB::table('users')->insert([
-            'name' => Str::random(10),
-            'email' => Str::random(10).'@gmail.com',
-            'password' => bcrypt('secret'),
-        ]);
-    }`
+        $this->registerPolicies();
 
-To see all the changes in the db file : 
-`php artisan migrate:fresh --seed`
-*
+        $gate->before(function ($user) {
+            return $user->id == 13; // this is an admin id. 
+        });
+    }
+```
 
-*Eloquent
-made Post & Contact models*
-`php artisan make:model Post
-php artisan make:model Contact`
-*We have to create a model for each table that he does*
+Every user can see the 3 latest posts (from anyone) in the home page (welcome page) and can see their all their own post on the article page. 
+They can all send messages, comment, create their own articles, delete them or update them. They cannot delete nor update any post that wasn't created by them. 
+The administrator is the only person with sufficient power to delete or update any post he/she wishes. 
 
-*Complete tables (post and contact)*
 
-*DEBUGED Change post table to posts table and contact table to contacts. now I can acces the data base.*
+### Running the tests
 
-*Seeded posts and users, as well as shows the all the post title in the main page.*
+Feel free to explore this blog, to create now post, delete them, leave comments, send messages though the contact us page, update or delete the post... 
 
-*TODO EXO 4. show only the 3 lastest posts*
+###ScreenShots
 
-*TODO EXO 5. afficher l'author*
+![WelcomePage](readmeImages/welcomePage.png "Welcome page")
+![ArticlePage](readmeImages/Articles.png "Articles page")
+![UpdateDeletePage](readmeImages/UpdateDeletePage.png "Update/Delete page")
+![ContactUsPage](readmeImages/contactUs.png "Contact Us page")
+![AllTheContactMessages](readmeImages/AllTheContactMessages.png "All The Contact Messages page")
+![AllTheContactMessages](readmeImages/AllTheContactMessages.png "All The Contact Messages page")
+![PermisionWithAdmin](readmeImages/PermisionWithAdmin.png "PermisionWithAdmin page")
+![NoPermissionUser](readmeImages/NoPermissionUser.png "NoPermissionUser page")
+
+
+
+## Author
+
+* **Salgado Ximena** - *Initial work* - 
+
+## Acknowledgements
+
+* Hat tip to anyone whose code was used (like W3school, stackoverflow...), 
+* Laracast for the tutorials
+* Nice coffee lady that sold me coffe during all the working weekends. 
+
 
 
