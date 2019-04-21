@@ -2,6 +2,7 @@
 >This project is presented as my "programmation web côté serveur" final projet. It is the result of one semestrer studing laravel and php. 
 
 ![ScreenShot](readmeImages/articlePage1.png "Show article page")
+
 ![CommentPage](readmeImages/articlePage2.png "Show comments page")
 
 ## Table of Contents
@@ -120,7 +121,7 @@ Feel free to explore this blog, to create now post, delete them, leave comments,
 * Nice coffee lady that sold me coffe during all the working weekends. 
 
 
-##ScreenShots
+## ScreenShots
 
 ![WelcomePage](readmeImages/welcomePage.png "Welcome page")
 ![ArticlePage](readmeImages/Articles.png "Articles page")
