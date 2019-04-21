@@ -6,7 +6,7 @@
     @section('subheader','blog')
 
 <div class="row medium-8 large-7 columns">
-    <div class="container">
+    <div class="container borderComments">
 	    
         <form action="{{ url('/contact') }}" method="POST">
         {{ csrf_field() }}
@@ -23,10 +23,11 @@
                     <textarea class="form-control {{ $errors->has('contact_message') ? 'is-invalid' : '' }}" name="contact_message" id="contact_message" placeholder="Votre message">{{ old('contact_message') }}</textarea>                            {!! $errors->first('contact_message', '
                             <div class="invalid-feedback">:message</div>') !!}
                 </div>
-                <button type="submit" class="btn btn-secondary">Send !</button>
+                <button type="submit" class="button is-link">Send !</button>
         </form>
-	</div>
-    <a href="/confirm"> Go to all the contact messages. </a>
+	
+   <button class="button button1" > <a href="/confirm"> Go to all the contact messages. </a></button>
+</div>
 </div>
 
 @endsection

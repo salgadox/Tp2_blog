@@ -39,11 +39,6 @@ Route::patch('/articles/{post_name}', 'PostController@update')->name('editArticl
 Route::delete('/articles/{post_name}', 'PostController@destroy')->name('deleteArticle')->middleware('auth');
 
 
-
-//Route::resource('projects', 'ProjectsController');
-
-
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

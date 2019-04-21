@@ -30,7 +30,7 @@ class PostPolicy
      */
     public function create(User $user)
     {
-        
+     //return $post->post_author == $user->id;
     }
 
     /**

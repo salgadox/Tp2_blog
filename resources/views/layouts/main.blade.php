@@ -6,6 +6,44 @@
     <title>@yield('title', 'Blog!')</title> 
     <!--default title: Blog -->
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+
+    <style type="text/css">
+        .button {
+              background-color: #4CAF50; /* Green */
+              border: none;
+              color: white;
+              padding: 20px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              cursor: pointer;
+            }
+
+        .button1 {
+              background-color: white; 
+              color: black; 
+              border: 2px solid #008CBA;
+            }
+
+        a:hover{color:pink}
+
+        .myimage {
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        div.borderComments {
+            border-style: solid;
+            border-width: 1px;
+            border-color: gray;
+            
+            border-radius: 5px;
+            padding: 15px;
+        }
+    </style>
 </head>
 
 <body>
@@ -13,14 +51,7 @@
     <div class="top-bar">
         <div class="top-bar-left">
             <ul class="menu">
-                <li class="menu-text">Blog</li>
-                <li><a href="/">Home</a></li>
-                <li><a href="/articles">Articles</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-
-            <ul class="top-bar-right">
-                        <!-- Authentication Links -->
+                <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
@@ -49,17 +80,11 @@
                                 </div>
                             </li>
                         @endguest
-                    </ul>
-            <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
-                    
-                </div>
+                <li class="menu-text">Blog</li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/articles">Articles</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
         </div>
     </div>
 
@@ -69,11 +94,9 @@
             <h2 class="subheader"> @yield('subheader', 'Blog!')</h2>
         </div>
     </div>
-
         @if(Session::has('flash_message'))
-   {!! session('flash_message') !!}
-@endif
-    @yield('content')
-
+            {!! session('flash_message') !!}
+        @endif
+        @yield('content')
 </body>
 </html>

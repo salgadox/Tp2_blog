@@ -3,8 +3,10 @@
 
 @section('content')
     @section('subtitle','Write a new article')
-    @section('subheader','write an article')
+    @section('subheader','You can write an article and it will appeare in your page ')
 
+    <div class="row medium-8 large-7 columns">
+    	<div class="container borderComments">
     <form  action="{{ route('createArticle') }}" method="POST" >
 		{{ csrf_field() }}
 		<div class="control">
@@ -32,11 +34,9 @@
 		</div>
 		<div class="field">
 			<div class="control">
-				<button type="submit" class="butoon is-link">Send Article </button>
+				<button type="submit" class="button is-link">Send Article </button>
 			</div>
 		</div> 
-
-		
 
 		@if ($errors->any())
 			<div class="notification is-danger">
@@ -48,5 +48,7 @@
 			</div>
 		@endif	
 	</form>
+</div>
+</div>
 
 @endsection
